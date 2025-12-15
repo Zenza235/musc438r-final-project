@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
-import './styles/App.css'
-import { Home, About, NotFound } from "./pages";
+import { Timeline, Credits, Page404, AlbumTemplate } from "./pages";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/" element={<Timeline />} />
+      <Route path="/credits" element={<Credits />} />
+      <Route path="/album-template" element={<AlbumTemplate />} />
       {/* 404 Page Not Found */}
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   );
 }

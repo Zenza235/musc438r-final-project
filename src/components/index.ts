@@ -1,2 +1,2 @@
-export { default as AlbumFrame } from "./AlbumFrame";
 export { Header } from "./Header";
+export { AlbumTimeline } from "./AlbumTimeline";
