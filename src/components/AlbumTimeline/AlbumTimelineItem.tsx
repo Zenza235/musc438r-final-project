@@ -6,7 +6,7 @@ interface AlbumTimelineItemProps {
     title: string,
     date: string,
     desc: string,
-    text: string,
+    text?: string,
     albumInfo?: {
       label: string,
       link: {
