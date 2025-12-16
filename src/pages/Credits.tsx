@@ -4,7 +4,7 @@ function Credits() {
   return (
     <>
       <Header />
-      <h1 className="text-ivory">Credits</h1>
+      <h1 className="text-tan-600 p-5 text-3xl">Credits</h1>
     </>
   );
 }

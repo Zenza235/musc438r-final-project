@@ -16,7 +16,10 @@ function Header({ showTimelineControls = false }: HeaderProps) {
           <div className="text-tan-300 text-3xl py-2 pr-3 inline">•</div>
           <HeaderLink href="/credits" name="Credits"/>
           {(showTimelineControls) ? (
-            <TimelineControls />
+            <>
+              <div className="text-tan-300 text-3xl py-2 pr-3 inline">•</div>
+              <TimelineControls />
+            </>
           ) : (null)}
         </nav>
       </header>

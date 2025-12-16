@@ -1,5 +1,5 @@
 import Timeline from "@mui/lab/Timeline";
-import items from "./timelineItems";
+import { items } from "../../items";
 import AlbumTimelineItem from "./AlbumTimelineItem";
 
 function AlbumTimeline() {

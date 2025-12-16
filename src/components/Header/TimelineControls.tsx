@@ -45,7 +45,6 @@ function TimelineControls() {
 
   return (
     <>
-      <div className="text-tan-300 text-3xl py-2 pr-3 inline">•</div>
       <h2 className="text-tan-300 text-2xl py-2 pr-3 inline bg-tan-300 border-tan-600 border-solid border-2">
         <div className="text-forest-400 hover:text-forest-600 hover:bg-tan-500 cursor-pointer inline bg-tan-600 py-2 px-4">Skip to:</div>
         <input 
