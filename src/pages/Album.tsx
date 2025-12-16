@@ -13,7 +13,7 @@ import { Header } from "../components";
  * 
  */
 
-function AlbumTemplate() {
+function Album() {
   return (
     <>
       <Header />
@@ -22,4 +22,4 @@ function AlbumTemplate() {
   );
 }
 
-export default AlbumTemplate;
+export default Album;

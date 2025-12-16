@@ -1,9 +1,26 @@
-const ALBUM_PAGE_ROUTE = "/albums";
+const ALBUM_PAGE_ROUTE = "/album";
 const ALBUM_IMG_PATH = "/assets/albums";
+
+/**
+ * note about ids:
+ * they're just so the search function jumps to a year.
+ * if multiple events occur in the same year, then only the first event in that year has an id
+ */
 
 const items = [
   // TODO: add non-album events too
   {
+    id: "1978",
+    title: "<i>Kalyi Jag</i> is formed.",
+    date: "1978",
+  },
+  {
+    id: "1979",
+    title: "<i>Kalyi Jag</i> win the \"Young Masters of Folk Art\" award.",
+    date: "1979",
+  },
+  {
+    id: "1987",
     title: "Gypsy Folk Songs From Hungary",
     date: "1987",
     desc: "Album Released",
@@ -16,6 +33,7 @@ const items = [
     }
   },
   {
+    id: "1989",
     title: "Lungoj O Drom Angla Mande",
     date: "1989",
     desc: "Album Released",
@@ -28,6 +46,7 @@ const items = [
     }
   },
   {
+    id: "1990",
     title: "Karingszo Me Phirav - Gypsy Folk Songs From Hungary - Amerre Én Járok",
     date: "1990",
     desc: "Album Released",
@@ -40,6 +59,7 @@ const items = [
     }
   },
   {
+    id: "1992",
     title: "O Suno - The Dream - Az Álom",
     date: "1992",
     desc: "Album Released",
@@ -52,6 +72,7 @@ const items = [
     }
   },
   {
+    id: "1998",
     title: "Cigányszerelem = Romano Kamipo = Gipsy Love",
     date: "1998",
     desc: "Album Released",
@@ -64,6 +85,7 @@ const items = [
     }
   },
   {
+    id: "2002",
     title: "Köszöntünk Titeket • Naisaras Tumen • Greating For You",
     date: "2002",
     desc: "Album Released",
@@ -76,6 +98,7 @@ const items = [
     }
   },
   {
+    id: "2004",
     title: "Tjirej Le Gilja = Minden Dalom A Tiéd = All My Songs Are Yours",
     date: "2004",
     desc: "Album Released",
