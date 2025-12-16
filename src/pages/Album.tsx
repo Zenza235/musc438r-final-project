@@ -36,6 +36,11 @@ function Album({ item }: AlbumProps) {
           <h2 className="text-2xl mt-2.5">
             {item.date} | <i>{item.albumInfo.label}</i>
           </h2><br/>
+          <p className="text-xl text-wrap w-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex magna, porta a nibh quis, posuere luctus massa. Suspendisse ut viverra ante, sit amet tincidunt sem. Duis nisl eros, vestibulum eu nisl ut, blandit bibendum elit. Cras id venenatis dolor, sit amet facilisis lorem. Integer malesuada mauris nisi, ultricies pretium lorem malesuada sit amet. Donec sit amet lectus eros. Etiam id euismod mi, a semper eros. Morbi varius ullamcorper pulvinar. Phasellus tempor pulvinar nibh, vel ullamcorper tellus fringilla nec. Nunc libero massa, ullamcorper in purus a, commodo ultrices tortor. Phasellus sapien est, ornare a elementum at, lacinia et nisl. Mauris tempus mi a felis finibus condimentum.
+
+Cras nec semper nisl. Maecenas tempor nisi id dolor ultrices viverra. Vivamus mattis lorem sed feugiat elementum. Phasellus nec ipsum non neque volutpat venenatis non et massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut sem velit, porta nec nibh eu, rhoncus varius arcu. Maecenas ac ipsum sit amet augue condimentum tempus a sed metus.
+          </p>
         </div>
       </div>
       <p className="text-tan-600 p-5 text-lg">{item.albumInfo.desc}</p>

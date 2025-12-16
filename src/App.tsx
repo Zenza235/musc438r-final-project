@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import { Timeline, Credits, Page404, Album } from "./pages";
+import { Timeline, About, Page404, Album } from "./pages";
 import { items } from "./items";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Timeline />} />
-      <Route path="/credits" element={<Credits />} />
+      <Route path="/about" element={<About />} />
       {/* Album Routes */}
       {items
         .filter((i) => !!i.albumInfo)
