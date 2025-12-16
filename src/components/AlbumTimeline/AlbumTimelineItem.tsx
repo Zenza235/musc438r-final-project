@@ -23,7 +23,7 @@ function AlbumTimelineItem({ item, index }: AlbumTimelineItemProps) {
   const timelineContentMargin = (index % 2 === 0) ? "mr-10 ml-5" : "mr-5 ml-10";
   const timelineContentClass = `border-olive-400 border-solid border-8 rounded-lg shadow-lg bg-tan-600 ${timelineContentMargin} mb-30 w-fit`;
   const flexDirection = (index % 2 === 0) ? "flex-row" : "flex-row-reverse"
-  const flexClass = `flex ${flexDirection}`;
+  const flexClass = `flex ${flexDirection} `;
 
   const textMargin = (index % 2 === 0) ? "mr-5" : "ml-5";
   const textClass = `flex flex-col my-5 font-serif ${textMargin}`;
@@ -31,7 +31,7 @@ function AlbumTimelineItem({ item, index }: AlbumTimelineItemProps) {
   const imgSrc = `${ALBUM_IMG_PATH}/${item.date}-front.jpg`;
 
   return (
-    <TimelineItem id={item.id} className="scroll-m-60" >
+    <TimelineItem id={item.id} className="scroll-m-60">
       <TimelineOppositeContent>
         <div className="text-tan-600 font-mono mx-5">
           <h3 className="text-3xl" >{item.date}</h3>
@@ -42,7 +42,7 @@ function AlbumTimelineItem({ item, index }: AlbumTimelineItemProps) {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <div className={timelineContentClass}>
+        <div className={`${timelineContentClass}`}>
           {(item.albumInfo) ? (
             <div className={flexClass}>
               <Link 
@@ -67,8 +67,8 @@ function AlbumTimelineItem({ item, index }: AlbumTimelineItemProps) {
               </div>
             </div>
           ) : (
-            <div className="flex flex-col font-serif m-5">
-              <h3 className="text-carbon text-2xl">{parse(item.title)}</h3>
+            <div className={`flex flex-col font-serif m-5`}>
+              <h4 className="text-carbon text-justify text-2xl">{parse(item.title)}</h4>
               <p>{item.text}</p>
             </div>
           )}

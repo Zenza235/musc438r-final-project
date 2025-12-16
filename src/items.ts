@@ -11,13 +11,18 @@ export const items = [
   // TODO: add non-album events too
   {
     id: "1978",
-    title: "<i>Kalyi Jag</i> is formed with members Gusztáv Varga, József Balogh, Ágnes Künstler, and Béla Balogh.",
+    title: "Kalyi Jag is founded by Ágnes Daróczi and János Bársony.",
     date: "1978",
   },
   {
     id: "1979",
-    title: "<i>Kalyi Jag</i> win the \"Young Masters of Folk Art\" award.",
+    title: "Kalyi Jag is awarded the title \"Young Masters of Folk Art\".",
     date: "1979",
+  },
+  {
+    id: "1984",
+    title: "Kalyi Jag has its first international performance at the <i>Collegium Hungaricum</i> in Vienna.",
+    date: "1984",
   },
   {
     id: "1987",
@@ -63,6 +68,10 @@ export const items = [
         page: `${ALBUM_PAGE_ROUTE}/o-suno-the-dream-az-álom`,
       },
     }
+  },
+  {
+    id: "1994",
+    title: "Kalyi Jag is awarded the <i>Europe Prize</i> by the European Youth Parliament and One World Group and Music Television."
   },
   {
     id: "1998",

@@ -16,7 +16,7 @@ function Header({ showTimelineControls = false }: HeaderProps) {
           <HeaderLink href="/about" name="About"/>
           {(showTimelineControls) ? (
             <>
-              <div className="text-tan-300 text-3xl py-2 pr-3 inline">•</div>
+              <div className="text-tan-300 text-3xl py-2 pr-3 inline">|</div>
               <TimelineControls />
             </>
           ) : (null)}

@@ -1,20 +1,10 @@
 import { useState } from "react";
+import { items } from "../../items";
 
 function TimelineControls() {
   // TODO: add years for other, non-album events
-  const YEARS = [
-    1978, 
-    1979, 
-    1987, // album
-    1989, // album
-    1990, // album
-    1992, // album
-    1993,
-    1994,
-    1998, // album
-    2002, // album
-    2004, // album
-  ]
+  const YEARS = items.filter((i) => !!i.id).map((i) => Number(i.id));
+
   const [yearQuery, setYearQuery] = useState('');
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,6 +22,7 @@ function TimelineControls() {
     if (isNaN(query)) {
       return;
     }
+    console.log(YEARS);
     let target: number | undefined = YEARS.find((year) => query <= year);
     if (!target) {
       // set target to most recent year in timeline
@@ -39,6 +30,7 @@ function TimelineControls() {
     }
     const targetId = document.getElementById(target.toString());
     if (targetId) {
+      console.log(`${queryString} --> ${target}`);
       targetId.scrollIntoView({ behavior: "smooth"});
     }
   };
@@ -47,7 +39,7 @@ function TimelineControls() {
     <>
       <h2 className=" text-3xl py-2 pr-3 inline">
         <input 
-          className="bg-transparent text-tan-300 placeholder:text-tan-300 w-80 border  border-solid text-center" 
+          className="bg-transparent text-tan-300 placeholder:text-tan-300 field-sizing-fixed border w-80 rounded-2xl border-solid pl-5 inline" 
           type="text"
           id="goto-input" 
           value={yearQuery} 
@@ -55,8 +47,9 @@ function TimelineControls() {
           onKeyDown={handleKeyDown}
           maxLength={4}
           minLength={4}
-          placeholder="search year..."
+          placeholder="enter year"
           autoFocus/>
+        <p className="inline ml-5 text-lg text-tan-300 italic">(click on the album covers for more info!)</p>
       </h2>
     </>
   );
