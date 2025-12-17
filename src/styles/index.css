@@ -29,6 +29,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   display: flex;
