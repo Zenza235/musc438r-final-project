@@ -1,5 +1,6 @@
-const ALBUM_PAGE_ROUTE = "/album";
-export const ALBUM_IMG_PATH = "/assets/albums";
+export const BASE_URL = import.meta.env.BASE_URL;
+const ALBUM_PAGE_ROUTE = `${BASE_URL}/album`;
+export const ALBUM_IMG_PATH = `${BASE_URL}/assets/albums`;
 
 /**
  * note about ids:

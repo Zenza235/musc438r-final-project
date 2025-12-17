@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/musc438r-final-project/",
+  base: "/musc438r-final-project",
 })
