@@ -1,5 +1,6 @@
 import HeaderLink from "./HeaderLink";
 import TimelineControls from "./TimelineControls";
+import { BASE_URL } from "../../items";
 
 interface HeaderProps {
   showTimelineControls?: boolean;
@@ -11,9 +12,9 @@ function Header({ showTimelineControls = false }: HeaderProps) {
       <header className="m-5">
         <h1 className="text-tan-600">The Evolution of <i>Kalyi Jag</i></h1>
         <nav className="mt-5">
-          <HeaderLink href="/" name="Timeline"/>
+          <HeaderLink href={BASE_URL} name="Timeline"/>
           <div className="text-tan-300 text-3xl py-2 pr-3 inline">•</div>
-          <HeaderLink href="/about" name="About"/>
+          <HeaderLink href={`${BASE_URL}/about`} name="About"/>
           {(showTimelineControls) ? (
             <>
               <div className="text-tan-300 text-3xl py-2 pr-3 inline">|</div>
